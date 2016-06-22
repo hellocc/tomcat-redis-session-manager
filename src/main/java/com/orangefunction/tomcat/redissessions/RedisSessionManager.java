@@ -27,8 +27,7 @@ import redis.clients.jedis.Protocol;
 import redis.clients.util.Pool;
 
 public class RedisSessionManager extends ManagerBase implements Lifecycle {
-
-  enum SessionPersistPolicy {
+   enum SessionPersistPolicy {
     DEFAULT,
     SAVE_ON_CHANGE,
     ALWAYS_SAVE_AFTER_REQUEST;
